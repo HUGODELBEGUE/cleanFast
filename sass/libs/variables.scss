@@ -1,0 +1,24 @@
+// colors palette
+
+$color__one: #e5e5e5;
+$color__two: #cca43b;
+$color__three: #242f40;
+$color__four: #363636;
+
+
+// colors body
+
+$color__body: $color__three;
+//$color__line: darken($color__body, 5);
+$color__line: lighten($color__body, 5);
+$color__links: lighten($color__body, 65);
+$color__maps: lighten($color__body, 15);
+
+// shadows body
+
+$box-shadow__2dp: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+0 3px 1px -2px rgba(0, 0, 0, 0.2),
+0 1px 5px 0 rgba(0, 0, 0, 0.12);
+$box-shadow__4dp: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+0 1px 10px 0 rgba(0, 0, 0, 0.12),
+0 2px 4px -1px rgba(0, 0, 0, 0.2);

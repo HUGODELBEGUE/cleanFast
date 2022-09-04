@@ -6,38 +6,64 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="./img/mini%20logo%20leanFast.svg">
     <title>Clean Fast</title>
 </head>
 <body>
 
-    <header>
-        <nav class="max__nav">
-            <ul>
-                <li>logo</li>
-                <li>presentation</li>
-                <li>service</li>
-                <li>maps</li>
-                <li>contact</li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav class="max__nav">
+        <ul>
+            <li><a href="./">
+                <svg class="logo__nav"></svg>
+            </a></li>
+            <li><i class="bi bi-car-front-fill"></i>services</li>
+            <li><i class="bi bi-geo-alt-fill"></i>maps</li>
+            <li><i class="bi bi-telephone-fill"></i>contact</li>
+            <li><i class="bi bi-house-fill"></i>à propos</li>
+        </ul>
+    </nav>
+</header>
 
-    <section class="__background_presentation" >
-        <div class="__presentation max__body">
-            <div class="__title_presentation">
-                <h1>Clean Fast</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam dolor eaque expedita ipsum
-                    laborum
-                    modi natus nisi nulla rem.</p>
-            </div>
+<section class="__background-presentation">
+    <div class="__presentation max__body">
+        <div class="__title-presentation">
+            <h1><img src="./img/logo_cleanfast.svg" alt="logo entreprise" width="300" height="300"></h1>
+            <p>Entreprise de ventes et de rénovations de voitures.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section>
-        <article>
+<section class="__services">
+    <article>
+        <h2>Services proposés</h2>
+        <p class="text__services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ipsum laboriosam
+            repellendus velit. Accusantium
+            doloremque dolorum enim excepturi magni maxime minima mollitia numquam officia, omnis placeat quasi quia
+            quos repellendus!</p>
+        <div class="card__services">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+    </article>
+</section>
 
-        </article>
-    </section>
+<section class="max__body">
+    <article class="__maps">
+        <div class="left">
+            <h2>Situation géographique</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea fuga fugit hic ipsa minus molestias
+                necessitatibus numquam officiis qui unde!</p>
+        </div>
+        <div class="right">
+            <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11973.615865837866!2d5.988501424349052!3d43.7868771434883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cbdcb246f2c791%3A0xc4b378e39edd239b!2sSCI%20Le%20Mas%20des%20Tilleuls!5e0!3m2!1sfr!2sfr!4v1662320225093!5m2!1sfr!2sfr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </article>
+</section>
 
 </body>
 </html>

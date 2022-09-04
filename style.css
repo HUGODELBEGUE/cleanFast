@@ -58,27 +58,30 @@ body {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  background-color: olive;
+  background-color: #242f40;
 }
-body h1 {
+body h2 {
   font-family: monospace;
-  font-size: 30px;
+  font-size: 62px;
+  color: #cdd5e3;
   margin: 2em 0;
 }
 body p {
   font-family: monospace;
-  font-size: 18px;
-  margin: 2em 0;
+  font-size: 22px;
+  color: #cdd5e3;
+  margin: 2em auto;
 }
 body li {
   font-family: monospace;
   font-size: 15px;
+  color: #cdd5e3;
 }
 body .max__body {
-  max-width: 1600px;
+  width: 1600px;
 }
 body .max__nav {
-  max-width: 1200px;
+  max-width: 900px;
 }
 
 header {
@@ -86,8 +89,9 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
+  align-items: flex-end;
   width: 100%;
-  height: 5em;
+  height: 7em;
 }
 header nav {
   display: flex;
@@ -95,21 +99,38 @@ header nav {
   align-items: center;
   text-align: center;
   width: 100%;
-  border-bottom: 2px solid rgb(180, 180, 109);
-  padding-bottom: 0.5em;
+  border-bottom: 2px solid #2d3b50;
+  padding-bottom: 0.8em;
+  margin-bottom: 1em;
 }
 header nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  justify-content: space-between;
   width: 100%;
+}
+header nav ul li .logo__nav {
+  background-image: url("./img/mini%20logo%20leanFast.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+}
+header nav ul > li:first-child {
+  border-right: 2px solid #2d3b50;
+}
+header nav ul li i {
+  margin-right: 15px;
 }
 
 section {
   padding: 5em 0;
   width: 100%;
 }
-section.__background_presentation {
+section.__background-presentation {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,7 +140,7 @@ section.__background_presentation {
   position: relative;
   height: 100vh;
 }
-section.__background_presentation::before {
+section.__background-presentation::before {
   content: "";
   position: absolute;
   top: 0;
@@ -131,16 +152,68 @@ section.__background_presentation::before {
   background-size: cover;
   opacity: 0.25;
 }
-section .__presentation {
+section div.__presentation {
   padding: 0 3em;
   position: relative;
 }
-section .__title_presentation {
+section div.__title-presentation {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  width: 40%;
+  width: 30%;
+}
+
+section.__services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+section .text__services {
+  width: 900px;
+}
+section .card__services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  column-gap: 3em;
+}
+section .card__services .card {
+  background-color: #cca43b;
+  border-radius: 5px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 600px;
+}
+
+section .__maps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  column-gap: 2em;
+}
+section .__maps div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 700px;
+}
+section .__maps div.left {
+  flex-direction: column;
+}
+section .__maps div.left h2 {
+  margin: 0.5em 0;
+}
+section .__maps div.right {
+  background-color: #405371;
+  border: 2px solid #2d3b50;
+  border-radius: 5px;
+  height: 550px;
 }
 
 /*# sourceMappingURL=style.css.map */
