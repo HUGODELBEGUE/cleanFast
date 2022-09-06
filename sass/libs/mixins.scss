@@ -4,3 +4,28 @@
   align-items: center;
   text-align: center;
 }
+
+@mixin card {
+  background-color: $color__two;
+  border-radius: 5px;
+  border: 2px solid $color__line__card;
+  box-shadow: $box-shadow__4dp;
+}
+
+@mixin box {
+  padding: 50px;
+  background-color: $color__box;
+  border-radius: 5px;
+  border: 2px solid $color__line;
+}
+
+@mixin button {
+  background-color: $color__button;
+  border: 2px solid $color__button;
+  color: $color__links;
+  font-family: monospace;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-variant-caps: all-small-caps;
+}

@@ -18,15 +18,15 @@
             <li><a href="./">
                 <svg class="logo__nav"></svg>
             </a></li>
-            <li><i class="bi bi-car-front-fill"></i>services</li>
-            <li><i class="bi bi-compass-fill"></i></i>maps</li>
-            <li><i class="bi bi-phone-fill"></i></i>contact</li>
-            <li><i class="bi bi-house-fill"></i>à propos</li>
+            <li><i class="bi bi-car-front-fill"></i>Services</li>
+            <li><i class="bi bi-compass-fill"></i></i>Maps</li>
+            <li><i class="bi bi-phone-fill"></i></i>Contact</li>
+            <li><i class="bi bi-house-fill"></i>À propos</li>
         </ul>
     </nav>
 </header>
 
-<section class="__background-presentation">
+<section class="__presentation">
     <div class="__presentation-content max__body">
         <div class="__title-presentation">
             <h1><img src="./img/logo_cleanfast.svg" alt="logo entreprise" width="300" height="300"></h1>
@@ -37,15 +37,26 @@
 
 <section class="__services">
     <article>
-        <h2>Services proposés</h2>
+        <h2>Quels <span>services</span> sont proposés?</h2>
         <p class="text__services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ipsum laboriosam
             repellendus velit. Accusantium
             doloremque dolorum enim excepturi magni maxime minima mollitia numquam officia, omnis placeat quasi quia
             quos repellendus!</p>
         <div class="card__services">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card">
+                <h3 class="card__title-text card__text">Service 1</h3>
+                <div class="card__text">Lorem ipsum dolor <strong>sit amet</strong></div>
+                <div class="card__text">Lorem ipsum dolor <strong>sit amet</strong></div>
+                <div class="card__text">Lorem ipsum dolor <strong>sit amet</strong></div>
+                <div class="card__price"><span class="card__price-number">200</span>€ TTC</div>
+            </div>
+            <div class="card">
+                <h3 class="card__title-text card__text">Service 2</h3>
+                <div class="card__text">Lorem ipsum dolor <strong>sit amet</strong></div>
+                <div class="card__text">Lorem ipsum dolor <strong>sit amet</strong></div>
+                <div class="card__text">Lorem ipsum dolor <strong>sit amet</strong></div>
+                <div class="card__price"><span class="card__price-number">500</span>€ TTC</div>
+            </div>
         </div>
     </article>
 </section>
@@ -53,7 +64,7 @@
 <section class="__maps max__body">
     <article class="__maps-content">
         <div class="left__maps">
-            <h2>Situation géographique</h2>
+            <h2><span>Où</span> sommes-nous géographiquement situé.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea fuga fugit hic ipsa minus molestias
                 necessitatibus numquam officiis qui unde!</p>
         </div>
@@ -78,11 +89,33 @@
         </div>
         <hr>
         <div class="right__contact">
-            <h2>Comment nous contacter</h2>
+            <h2>Comment nous <span>contacter</span>?</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur dolorem ea error
                 excepturi fuga neque quaerat repellat rerum ut?</p>
         </div>
     </article>
+    <form action="./" method="post">
+        <div class="__form-content">
+            <div>
+                <label id="name">Votre nom</label>
+                <input type="text" name="name" placeholder="ex. Jean Dupont">
+            </div>
+            <div>
+                <label id="mail">Votre adresse email</label>
+                <input type="email" name="mail" placeholder="ex. jean.dupont@gmail.com">
+            </div>
+            <div>
+                <label id="object">L'objet du message</label>
+                <input type="text" name="object" placeholder="ex. Achat de voiture">
+            </div>
+            <div>
+                <textarea placeholder="Ecrivez votre demande, essayez de la détailler à maximum.."></textarea>
+            </div>
+            <div class="form__submit">
+                <input type="submit" value="Envoyer">
+            </div>
+        </div>
+    </form>
 </section>
 
 <section class="__apropos">
@@ -91,7 +124,7 @@
             <img src="./img/cest-un-vieux-moulin.jpg" alt="roue d'un moulin">
         </div>
         <div class="infos__moulin">
-            <h2>En savoir plus sur nous</h2>
+            <h2>En savoir plus sur <span>nous</span>.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem blanditiis consequatur dolore,
                 dolores ea eos in laborum minima nam nesciunt odio porro quae quam, sapiente soluta suscipit tempore
                 ut.</p>

@@ -9,13 +9,18 @@ $color__four: #363636;
 // colors body
 
 $color__body: $color__three;
+$color__body__two: lighten($color__body, 5);
+$color__line__card: lighten($color__two, 20);;
+$color__box: lighten($color__body, 15);
+$color__links: lighten($color__body, 65);
+$color__input: lighten($color__four, 75);
+$color__button: #5f9ea0ff;
+$color__button__press: rgba(95, 158, 160, 0.65);
+$color__word: #68d3d5;
 //$color__line: darken($color__body, 5);
 $color__line: lighten($color__body, 30);
 $color__line__header: lighten($color__body, 10);
-$color__line__footer: lighten($color__four, 5);;
-$color__box: lighten($color__body, 15);;
-$color__links: lighten($color__body, 65);
-$color__body__two: lighten($color__body, 5);
+$color__line__footer: lighten($color__four, 5);
 
 // shadows body
 
