@@ -17,14 +17,14 @@ body {
     font-family: monospace;
     font-size: 62px;
     color: $color__links;
-    margin: .5em 0;
+    margin: 1rem 0;
   }
 
   p {
     font-family: monospace;
     font-size: 22px;
     color: $color__links;
-    margin: 2em auto;
+    margin: 2rem auto;
   }
 
   li {
@@ -51,17 +51,17 @@ header {
   nav {
     @include position;
     width: 100%;
-    border-bottom: 2px solid $color__line;
+    border-bottom: 2px solid $color__line__header;
     padding-bottom: .8em;
     margin-bottom: 1em;
 
     ul {
       @include position;
-      justify-content: space-between;
       width: 100%;
     }
 
     ul li {
+      margin-left: 4em;
 
       .logo__nav {
         background-image: url("./img/mini%20logo%20leanFast.svg");
@@ -74,7 +74,8 @@ header {
     }
 
     ul > li:first-child {
-      border-right: 2px solid $color__line;
+      border-right: 2px solid $color__line__header;
+      margin-left: 0;
     }
 
     ul li i {
@@ -129,7 +130,7 @@ section {
   &.__services {
     @include position;
     flex-direction: column;
-    background-color: $color__line;
+    background-color: $color__body__two;
   }
 
   .text__services {
@@ -166,14 +167,11 @@ section {
       &.left__maps {
         flex-direction: column;
         text-align: left;
-
-        h2 {
-          margin: .5em 0;
-        }
+        padding-right: 6em;
       }
 
       &.right__maps {
-        background-color: $color__maps;
+        background-color: $color__box;
         border: 2px solid $color__line;
         border-radius: 5px;
         height: 550px;
@@ -185,15 +183,15 @@ section {
 section {
   &.__contact {
     height: 950px;
-    background-color: $color__line;
+    background-color: $color__body__two;
   }
+
   .__contact-content {
     @include position;
 
     hr {
       height: 200px;
       margin: 5px 50px;
-      margin-left: 0;
     }
 
     div {
@@ -209,6 +207,7 @@ section {
 
       ul {
         @include position;
+        align-items: end;
         flex-direction: column;
         row-gap: 20px;
       }
@@ -216,6 +215,55 @@ section {
       ul li {
         font-size: 22px;
       }
+
+      ul li i {
+        margin-left: 25px;
+      }
+    }
+  }
+}
+
+section {
+  &.__apropos {
+    @include position;
+    height: 1006.5px;
+    width: 100%;
+  }
+
+  article {
+    &.__apropos-content {
+      position: relative;
+      width: 600px;
+      height: 100%;
+    }
+  }
+
+  div {
+    &.img__moulin {
+      position: absolute;
+      width: 600px;
+      padding: 50px;
+      background-color: $color__box;
+      border-radius: 5px;
+      border: 2px solid $color__line;
+      right: 18em;
+      top: 2em;
+      z-index: 5;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &.infos__moulin {
+      position: absolute;
+      width: 600px;
+      padding: 50px;
+      background-color: $color__box;
+      border-radius: 5px;
+      border: 2px solid $color__line;
+      bottom: 2em;
+      left: 17em;
     }
   }
 }

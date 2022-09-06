@@ -10,10 +10,12 @@ $color__four: #363636;
 
 $color__body: $color__three;
 //$color__line: darken($color__body, 5);
-$color__line: lighten($color__body, 5);
-$color__links: lighten($color__body, 65);
-$color__maps: lighten($color__body, 15);
+$color__line: lighten($color__body, 30);
+$color__line__header: lighten($color__body, 10);
 $color__line__footer: lighten($color__four, 5);;
+$color__box: lighten($color__body, 15);;
+$color__links: lighten($color__body, 65);
+$color__body__two: lighten($color__body, 5);
 
 // shadows body
 

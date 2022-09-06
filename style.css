@@ -64,13 +64,13 @@ body h2 {
   font-family: monospace;
   font-size: 62px;
   color: #cdd5e3;
-  margin: 0.5em 0;
+  margin: 1rem 0;
 }
 body p {
   font-family: monospace;
   font-size: 22px;
   color: #cdd5e3;
-  margin: 2em auto;
+  margin: 2rem auto;
 }
 body li {
   font-family: monospace;
@@ -99,7 +99,7 @@ header nav {
   align-items: center;
   text-align: center;
   width: 100%;
-  border-bottom: 2px solid #2d3b50;
+  border-bottom: 2px solid #364761;
   padding-bottom: 0.8em;
   margin-bottom: 1em;
 }
@@ -108,8 +108,10 @@ header nav ul {
   justify-content: center;
   align-items: center;
   text-align: center;
-  justify-content: space-between;
   width: 100%;
+}
+header nav ul li {
+  margin-left: 4em;
 }
 header nav ul li .logo__nav {
   background-image: url("./img/mini%20logo%20leanFast.svg");
@@ -120,7 +122,8 @@ header nav ul li .logo__nav {
   margin-right: 12px;
 }
 header nav ul > li:first-child {
-  border-right: 2px solid #2d3b50;
+  border-right: 2px solid #364761;
+  margin-left: 0;
 }
 header nav ul li i {
   margin-right: 15px;
@@ -210,13 +213,11 @@ section .__maps-content div {
 section .__maps-content div.left__maps {
   flex-direction: column;
   text-align: left;
-}
-section .__maps-content div.left__maps h2 {
-  margin: 0.5em 0;
+  padding-right: 6em;
 }
 section .__maps-content div.right__maps {
   background-color: #405371;
-  border: 2px solid #2d3b50;
+  border: 2px solid #5b77a2;
   border-radius: 5px;
   height: 550px;
 }
@@ -234,7 +235,6 @@ section .__contact-content {
 section .__contact-content hr {
   height: 200px;
   margin: 5px 50px;
-  margin-left: 0;
 }
 section .__contact-content div {
   width: 40em;
@@ -250,11 +250,53 @@ section .__contact-content div ul {
   justify-content: center;
   align-items: center;
   text-align: center;
+  align-items: end;
   flex-direction: column;
   row-gap: 20px;
 }
 section .__contact-content div ul li {
   font-size: 22px;
+}
+section .__contact-content div ul li i {
+  margin-left: 25px;
+}
+
+section.__apropos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 1006.5px;
+  width: 100%;
+}
+section article.__apropos-content {
+  position: relative;
+  width: 600px;
+  height: 100%;
+}
+section div.img__moulin {
+  position: absolute;
+  width: 600px;
+  padding: 50px;
+  background-color: #405371;
+  border-radius: 5px;
+  border: 2px solid #5b77a2;
+  right: 18em;
+  top: 2em;
+  z-index: 5;
+}
+section div.img__moulin img {
+  width: 100%;
+}
+section div.infos__moulin {
+  position: absolute;
+  width: 600px;
+  padding: 50px;
+  background-color: #405371;
+  border-radius: 5px;
+  border: 2px solid #5b77a2;
+  bottom: 2em;
+  left: 17em;
 }
 
 footer {
