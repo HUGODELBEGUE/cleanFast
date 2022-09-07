@@ -7,6 +7,10 @@ body {
   flex-direction: column;
   background-color: $color__body;
 
+  section {
+    width: 100%;
+  }
+
   //h1 {
   //  font-family: monospace;
   //  font-size: 30px;
@@ -104,15 +108,14 @@ header {
 }
 
 section {
-  padding: 5em 0;
-  width: 100%;
-
   &.__presentation {
     @include position;
     align-items: flex-start;
     text-align: left;
     position: relative;
     height: 100vh;
+    padding-top: 5em;
+    padding-bottom: 5em;
 
     &::before {
       content: '';
@@ -150,6 +153,7 @@ section {
     @include position;
     flex-direction: column;
     background-color: $color__body__two;
+    padding-top: 5em;
   }
 
   .text__services {
@@ -158,33 +162,48 @@ section {
 
   .card__services {
     @include position;
+    position: relative;
     column-gap: 3em;
+    margin-top: calc(2rem + 15px);
+    height: 654px;
 
     .card {
       @include card;
       @include position;
+      position: absolute;
       justify-content: space-evenly;
       flex-direction: column;
       height: auto;
       width: 500px;
+      top: 2em;
+
+      &.right {
+        right: 0;
+      }
+
+      &.left {
+        left: 0;
+      }
     }
 
     h3.card__title-text {
-      padding: 2.5rem 0;
+      padding: 2.6rem 0;
       font-size: 30px;
+      font-weight: bold;
+      font-variant-caps: small-caps;
     }
 
     .card__text, card__price {
       @include position;
       width: 100%;
-      padding: 1.2rem 0;
-      font-family: monospace;
+      font-family: sans-serif;
       font-size: 25px;
       color: $color__four;
     }
 
     .card__text {
       flex-direction: column;
+      padding: 1.6rem 0;
       border-bottom: 1px solid $color__line__card;
     }
 
@@ -195,6 +214,7 @@ section {
 
       .card__price-number {
         font-family: roboto;
+        font-weight: bold;
         color: #286767;
         font-size: 100px;
       }
@@ -204,7 +224,8 @@ section {
 
 section {
   &.__maps {
-
+    padding-top: 11em;
+    padding-bottom: 5em;
   }
 
   .__maps-content {
@@ -234,6 +255,8 @@ section {
     @include position;
     flex-direction: column;
     background-color: $color__body__two;
+    padding-top: 5em;
+    padding-bottom: 11em;
   }
 
   .__contact-content {
@@ -332,6 +355,8 @@ section {
     @include position;
     height: 1006.5px;
     width: 100%;
+    padding-top: 5em;
+    padding-bottom: 5em;
   }
 
   article {
@@ -346,10 +371,22 @@ section {
     &.img__moulin {
       @include box;
       position: absolute;
-      width: 600px;
-      right: 18em;
-      top: 2em;
+      width: 834px;
+      right: 11em;
+      top: -6em;
       z-index: 5;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &.essai {
+      @include box;
+      position: absolute;
+      width: 535px;
+      right: -24em;
+      top: -4em;
 
       img {
         width: 100%;
@@ -360,8 +397,8 @@ section {
       @include box;
       position: absolute;
       width: 600px;
-      bottom: 2em;
-      left: 17em;
+      bottom: -2em;
+      left: 13em;
     }
   }
 }

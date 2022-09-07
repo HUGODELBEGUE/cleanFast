@@ -60,6 +60,9 @@ body {
   flex-direction: column;
   background-color: #242f40;
 }
+body section {
+  width: 100%;
+}
 body h2 {
   font-family: monospace;
   font-size: 62px;
@@ -145,10 +148,6 @@ header nav ul li i {
   margin-right: 15px;
 }
 
-section {
-  padding: 5em 0;
-  width: 100%;
-}
 section.__presentation {
   display: flex;
   justify-content: center;
@@ -158,6 +157,8 @@ section.__presentation {
   text-align: left;
   position: relative;
   height: 100vh;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 section.__presentation::before {
   content: "";
@@ -190,6 +191,7 @@ section.__services {
   text-align: center;
   flex-direction: column;
   background-color: #2d3b50;
+  padding-top: 5em;
 }
 section .text__services {
   width: 900px;
@@ -199,7 +201,10 @@ section .card__services {
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
   column-gap: 3em;
+  margin-top: calc(2rem + 15px);
+  height: 654px;
 }
 section .card__services .card {
   background-color: #cca43b;
@@ -210,14 +215,24 @@ section .card__services .card {
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: absolute;
   justify-content: space-evenly;
   flex-direction: column;
   height: auto;
   width: 500px;
+  top: 2em;
+}
+section .card__services .card.right {
+  right: 0;
+}
+section .card__services .card.left {
+  left: 0;
 }
 section .card__services h3.card__title-text {
-  padding: 2.5rem 0;
+  padding: 2.6rem 0;
   font-size: 30px;
+  font-weight: bold;
+  font-variant-caps: small-caps;
 }
 section .card__services .card__text, section .card__services card__price {
   display: flex;
@@ -225,13 +240,13 @@ section .card__services .card__text, section .card__services card__price {
   align-items: center;
   text-align: center;
   width: 100%;
-  padding: 1.2rem 0;
-  font-family: monospace;
+  font-family: sans-serif;
   font-size: 25px;
   color: #363636;
 }
 section .card__services .card__text {
   flex-direction: column;
+  padding: 1.6rem 0;
   border-bottom: 1px solid #e1ca8c;
 }
 section .card__services .card__price {
@@ -241,10 +256,15 @@ section .card__services .card__price {
 }
 section .card__services .card__price .card__price-number {
   font-family: roboto;
+  font-weight: bold;
   color: #286767;
   font-size: 100px;
 }
 
+section.__maps {
+  padding-top: 11em;
+  padding-bottom: 5em;
+}
 section .__maps-content {
   display: flex;
   justify-content: center;
@@ -279,6 +299,8 @@ section.__contact {
   text-align: center;
   flex-direction: column;
   background-color: #2d3b50;
+  padding-top: 5em;
+  padding-bottom: 11em;
 }
 section .__contact-content {
   display: flex;
@@ -369,6 +391,7 @@ section form div.form__submit input {
   font-weight: bold;
   letter-spacing: 1.5px;
   font-variant-caps: all-small-caps;
+  padding: initial;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   transition: box-shadow 0.15s, background-color 0.15s;
   height: 55px;
@@ -385,6 +408,8 @@ section.__apropos {
   text-align: center;
   height: 1006.5px;
   width: 100%;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 section article.__apropos-content {
   position: relative;
@@ -397,12 +422,25 @@ section div.img__moulin {
   border-radius: 5px;
   border: 2px solid #5b77a2;
   position: absolute;
-  width: 600px;
-  right: 18em;
-  top: 2em;
+  width: 834px;
+  right: 11em;
+  top: -6em;
   z-index: 5;
 }
 section div.img__moulin img {
+  width: 100%;
+}
+section div.essai {
+  padding: 50px;
+  background-color: #405371;
+  border-radius: 5px;
+  border: 2px solid #5b77a2;
+  position: absolute;
+  width: 535px;
+  right: -24em;
+  top: -4em;
+}
+section div.essai img {
   width: 100%;
 }
 section div.infos__moulin {
@@ -412,8 +450,8 @@ section div.infos__moulin {
   border: 2px solid #5b77a2;
   position: absolute;
   width: 600px;
-  bottom: 2em;
-  left: 17em;
+  bottom: -2em;
+  left: 13em;
 }
 
 footer {
